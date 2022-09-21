@@ -100,6 +100,9 @@ Last step is to fix the temporal control in the option using these steps:
 
 After playing the temporal control, the data were showing step by step.
 
+![Covid-19 new cases/deaths:](Task04_results.PNG)
+Covid-19 new cases/deaths video animation: https://youtu.be/jyq8y5S_rEI
+
 ## Discussion and Results
 
 After finishing all steps, we realized a mistake, some of the biggest countries are not giving any data.
