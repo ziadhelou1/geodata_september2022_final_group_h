@@ -1,0 +1,44 @@
+Hay mazboutaaa
+
+
+create view public.covid_countries as(
+ 
+ SELECT t1."Country" ,
+    t1."Date_reported",
+    t1."New_cases" ,
+	t1."New_deaths",
+    t2.geom
+   FROM public.covid19 t1,
+    public.countries t2
+  WHERE t1."Country" = t2."name")
+
+sar username postgres w xxxxxx 3al qgis lama na3moul add layer
+
+we did excel modified to fix the country names so it matches the geom data in pgadmin4
+
+kermel excel mna3mil new table covid_19 w mnsame l columns metl l excel
+mnektoub hayda shi bl query 
+
+
+SET datestyle = DMY;
+SELECT '13-01-20'::TIMESTAMP;
+
+copy covid19 from 'C:/Users/HP/Desktop/Ziad/University/Geodata/geodata_september2022_final_group_h/Task04/Data/covid19_data_modified.csv' with csv header
+
+
+ma3mil symbology graduated we7de lal cases we7de lal deaths values mn ba3d ma na3mil duplicate layer w mnghayir asemyoun
+
+mnerja3 properties 3a layer> temporal control > mn7at single Field with Date/Time, include start, include end
+field Date_reported
+Event duration 1 week
+w bara b temporal control mnzabit range ben 2020-01-06 lal 2022-12-12 w mn7at step 1 w weeks
+
+shi li bi7ayir eno the data by itself yali jeye mn l masdar ba3d 2 weeks bisafro aghlabyet l bled..
+
+b symbology mn7at natural breaks
+
+C:\Users\HP\Documents\Wondershare\Wondershare Filmora\Recorded
+
+
+
+covid link data https://covid19.who.int/data
