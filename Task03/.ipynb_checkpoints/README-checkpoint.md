@@ -63,17 +63,16 @@ To measure the mound heights relative to their direct environment, the "profile 
 Clicking on Plugins > Profile Tool > Terrain Profile, we can access the profile tool to measure directly on the map.
 Simply drawing a line over the mounds in the DTM layer to measure their elevations. We extended the line as much as we can so we can identify the heights. We used many lines over many burial mounds with many directions so we can take a better idea about the elevations.
 
-![Burial Mounds Elevation Measurements 1](images/elevation_measurements)
+![Burial Mounds Elevation Measurements 1](images/elevation_measurements_1)
 ![Burial Mounds Elevation Measurements 2](images/elevation_measurements_2)
 ![Burial Mounds Elevation Measurements 3](images/elevation_measurements_3)
 ![Burial Mounds Elevation Measurements 4](images/elevation_measurements_4)
 ![Burial Mounds Elevation Measurements 5](images/elevation_measurements_5)
 ![Burial Mounds Elevation Measurements 6](images/elevation_measurements_6)
-![Burial Mounds Elevation Measurements 7](images/elevation_measurements_7)
 
 In the pictures, the red lines on the map are showing the relative burial mounds measured, and we can see in the table the elevation above the sea. The lines were drawn from the top to the bottom, so it is reflected in the graph starting from 0 on the x axis.
 The x axis represent the distance in meters of the red line, and the y line represents the elevation above the sea.
-In order to identify how much is the elevation from the direct environment we can see the tables. For example in the picture number one we can see that the lowest elevation is 34 meters above the sea and the highest is 35 meters, it means the direct environment elevation in this burial mound is 1 meter.
+In order to identify how much is the elevation from the direct environment we can see the tables. For example in the picture number one we can see that the lowest elevation is approximately 36 meters above the sea and the highest is approximately 37.4 meters, it means the direct environment elevation in this burial mound is 1.4 meter.
 Some of them have 1.5 meters direct environment elevation, others have 0.5 meters. The average range concluded is between 0.5 and 1.5 meters. 
 We can also see an elevation difference above the sea between the burial mounds themselves, that is logically showing that the land is not completely flat, it has a small angle, starting from the left burial mounds measured at 35 meters above the sea to the last burial mounds measured on the right at 38 meters, at the lowest points measured.
 
