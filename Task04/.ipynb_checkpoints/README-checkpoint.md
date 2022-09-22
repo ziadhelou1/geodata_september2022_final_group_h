@@ -98,10 +98,10 @@ Last step is to fix the temporal control in the option using these steps:
 4- Field: Date_reported
 5- Event duration 1, Weeks.
 
-After playing the temporal control, the data were showing step by step.
+After playing the temporal control, the map was showing the animation.
+Covid-19 new cases/deaths video animation: https://youtu.be/jyq8y5S_rEI
 
 ![Covid-19 new cases/deaths](Task04_results.PNG)
-Covid-19 new cases/deaths video animation: https://youtu.be/jyq8y5S_rEI
 
 ## Discussion and Results
 
@@ -114,11 +114,11 @@ To fix this step, the covid19 CSV downloaded from Jupyter Notebook after the edi
 Redoing all the steps again using the new modified excel named "covid19_data_modified" to get the last results.
 A video was uploaded on youtube to show how the countries layers are changing their colors based on weekly Covid-19 new cases/deaths: https://youtu.be/jyq8y5S_rEI
 
+## Conclusion
+
 Analyzing the last results, we found some issues.
 "Turkey" country was not showing any values changing, that was a problem from the initial data, seems that Turkey was not providing any information about Covid-19.
 Looking at the data, the biggest countries are turning into more red color than small countries, which prooving that the data is not scientific, since the biggest countries have more population and they will result naturally in more Covid-19 cases and more deaths.
-
-![Choropleth Covid-19 Worldwide Animated Map 2020-2022 Screenshot](Task04_results.PNG)
 
 It was a challenging task, and I am looking forward to see how it can be done in a more scientific way, maybe to collect the percentage of the data based on the population of each country and work on the percentage values in our tables instead of working on just numbers. That's how we can understand how Covid-19 was conquering the countries in a better way. For example 1.5 million cases in Lebanon during a week means almost 25% of the country's population is affected, but 1.5 million cases in the United States is almost 0.5%. In this case we can see that Covid-19 is more severe in Lebanon than USA, and the color of USA should be lighter than Lebanon during this week. But in our data, if we have the same example, the 2 countries will be showing the same color, which don't show the real reflection of Covid-19.
 But in the end, if anyone is interested in seeing only the real numbers animated, it would be useful.
