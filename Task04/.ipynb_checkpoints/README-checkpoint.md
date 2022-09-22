@@ -20,9 +20,9 @@ The problem was how to join the countries layers with the Covid-19 data and stil
 
 ### First failed step done in QGIS
 
-1- Download the world administrative boundaries and add the shape file .shp to the QGIS.
-2- Upload the data as delimited text layer
-3- Join the data using join option in properties
+1- Download the world administrative boundaries and add the shape file .shp to the QGIS. <br />
+2- Upload the data as delimited text layer <br />
+3- Join the data using join option in properties <br />
 
 Joining from the CSV to the shape file was not showing all the dates, only showing the first week for all countries.
 Joining from the shape file to the CSV resulted in a table file only without any geometry to reflect on the map.
