@@ -1,6 +1,6 @@
 # Task04: Choropleth Covid-19 Worldwide Animated Map 2020-2022
 
-### Before we start to avoid confusion, the username and password of QGIS file for this task are:
+### The username and password of QGIS file for this task are:
 ### Username: "postgres"
 ### Password: "xxxxxx"
 
@@ -100,7 +100,7 @@ Last step is to fix the temporal control in the option using these steps:
 
 After playing the temporal control, the data were showing step by step.
 
-![Covid-19 new cases/deaths:](Task04_results.PNG)
+![Covid-19 new cases/deaths](Task04_results.PNG)
 Covid-19 new cases/deaths video animation: https://youtu.be/jyq8y5S_rEI
 
 ## Discussion and Results
