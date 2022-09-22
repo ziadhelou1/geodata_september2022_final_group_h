@@ -42,10 +42,10 @@ That was the best value to better show the landforms and the drawn picture of th
 
 Looking at the pictures, the burial mounds in the "DTM_Uedemer_Hochwald_N" layer are placed in the east, north-east or north of the black circles that represents the burial mounds in the drawn picture.
 
-![Matching Georeferenced Map with Burial Mounds in Marienbaum 1](sub_task_3.2_burial_mounds_matching_georeferenced_map_2.png)
-![Matching Georeferenced Map with Burial Mounds in Marienbaum 2](sub_task_3.2_burial_mounds_matching_georeferenced_map_3.png)
-![Matching Georeferenced Map with Burial Mounds in Marienbaum 3](sub_task_3.2_burial_mounds_matching_georeferenced_map.png)
-![Matching Georeferenced Map with Burial Mounds in Marienbaum 4](sub_task_3.2_burial_mounds_matching_georeferenced_map_5.PNG)
+![Matching Georeferenced Map with Burial Mounds in Marienbaum 1](images/sub_task_3.2_burial_mounds_matching_georeferenced_map_2.png)
+![Matching Georeferenced Map with Burial Mounds in Marienbaum 2](images/sub_task_3.2_burial_mounds_matching_georeferenced_map_3.png)
+![Matching Georeferenced Map with Burial Mounds in Marienbaum 3](images/sub_task_3.2_burial_mounds_matching_georeferenced_map.png)
+![Matching Georeferenced Map with Burial Mounds in Marienbaum 4](images/sub_task_3.2_burial_mounds_matching_georeferenced_map_5.PNG)
 
 In the last 2 pictures, we changed little bit in the options and zoom in to show the difference in other way. Z Factor was set to 20 in the last picture.
 
@@ -63,13 +63,13 @@ To measure the mound heights relative to their direct environment, the "profile 
 Clicking on Plugins > Profile Tool > Terrain Profile, we can access the profile tool to measure directly on the map.
 Simply drawing a line over the mounds in the DTM layer to measure their elevations. We extended the line as much as we can so we can identify the heights. We used many lines over many burial mounds with many directions so we can take a better idea about the elevations.
 
-![Burial Mounds Elevation Measurements 1](elevation_measurements)
-![Burial Mounds Elevation Measurements 2](elevation_measurements_2)
-![Burial Mounds Elevation Measurements 3](elevation_measurements_3)
-![Burial Mounds Elevation Measurements 4](elevation_measurements_4)
-![Burial Mounds Elevation Measurements 5](elevation_measurements_5)
-![Burial Mounds Elevation Measurements 6](elevation_measurements_6)
-![Burial Mounds Elevation Measurements 7](elevation_measurements_7)
+![Burial Mounds Elevation Measurements 1](images/elevation_measurements)
+![Burial Mounds Elevation Measurements 2](images/elevation_measurements_2)
+![Burial Mounds Elevation Measurements 3](images/elevation_measurements_3)
+![Burial Mounds Elevation Measurements 4](images/elevation_measurements_4)
+![Burial Mounds Elevation Measurements 5](images/elevation_measurements_5)
+![Burial Mounds Elevation Measurements 6](images/elevation_measurements_6)
+![Burial Mounds Elevation Measurements 7](images/elevation_measurements_7)
 
 In the pictures, the red lines on the map are showing the relative burial mounds measured, and we can see in the table the elevation above the sea. The lines were drawn from the top to the bottom, so it is reflected in the graph starting from 0 on the x axis.
 The x axis represent the distance in meters of the red line, and the y line represents the elevation above the sea.
@@ -92,7 +92,7 @@ Next step is to set a simple line in the symbology and fix the color and width w
 We saved it as a geopackage in a geopackage folder "rectangular_geopackage_structure".
 There are a lot of rectangles that are shown very clear in that area. I don't have any guess about these rectangular shapes, I didn't find information online, that's why I will make a visit to the place to get an idea about them.
 
-![Rectangular Structure Surrounding the Burial Mounds 1](sub_task_3.4.PNG)
-![Rectangular Structure Surrounding the Burial Mounds 2](rectangular_structures.png)
+![Rectangular Structure Surrounding the Burial Mounds 1](images/sub_task_3.4.PNG)
+![Rectangular Structure Surrounding the Burial Mounds 2](images/rectangular_structures.png)
 
 Task 3.4 QGIS file can be found under Task_3.4 name.
