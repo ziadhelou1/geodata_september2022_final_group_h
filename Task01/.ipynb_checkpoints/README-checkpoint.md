@@ -10,18 +10,18 @@ Plot the annual mean temperatures of years 2017, 2018, and 2019 versus altitude 
 
 ## Sub-Task 1.1 Answer:
 
-Working on Jupyter Notebook Task01, we setup an FTP server connection so we can extract all data automatically from DWD website, and import them into a Pandas dataframe.
-After importing the data we realized a problem in the values column of the dataframe, the stations that have 4 digits altitude (over 1000 meters) are not showing first digit on the left. For example instead of showing 2965 meters of altitude for the station of Zugspitze, it shows 965 meters.
+Working on Jupyter Notebook Task01, we setup an FTP server connection so we can extract all data automatically from DWD website, and import them into a Pandas dataframe.<br />
+After importing the data we realized a problem in the values column of the dataframe, the stations that have 4 digits altitude (over 1000 meters) are not showing first digit on the left. For example instead of showing 2965 meters of altitude for the station of Zugspitze, it shows 965 meters.<br />
 After working on Jupyter Notebook Task01, and filter the stations that are active between 2017 and 2019 as stated in the question, we identified only 2 stations over 1000 meters of altitude.
 
-First we were asked to verify this hypothesis: "In the troposphere the mean annual temperature decreases approximately linearly with height."
-We worked on 4 stations that have the ids of 2480, 6346, 2290, 5792. The altitudes of these stations are 108 meters, 531 meters, 977 meters, 2965 meters, respectively.
-We renamed the columns so the highest station "Zugspitze" will show the real altitude 2965 meters.
+First we were asked to verify this hypothesis: "In the troposphere the mean annual temperature decreases approximately linearly with height."<br />
+We worked on 4 stations that have the ids of 2480, 6346, 2290, 5792. The altitudes of these stations are 108 meters, 531 meters, 977 meters, 2965 meters, respectively.<br />
+We renamed the columns so the highest station "Zugspitze" will show the real altitude 2965 meters.<br />
 After plotting these 4 stations, we can verify the hypothesis. It is clearly demonstrated that each time the altitude is higher, the temperature is proportionally lower.
 
 ![Annual Mean Temperatures versus Altitude of 4 Stations in Bavaria](sub_task_1.1_2.PNG)
 
-To plot the temperature versus altitude of all Bavaria stations in a scatter plot, we did a series of steps in Task01 jupyter notebook.
+To plot the temperature versus altitude of all Bavaria stations in a scatter plot, we did a series of steps in Task01 jupyter notebook.<br />
 There are 2 stations in the results that have more than 1000 meters of altitude but they miss the first digit on the left so the results that we got shows a correlation between all the other stations, but only these 2 stations are not correlated with the others at all.
 
 ![Annual Mean Temperature of DWD stations in Bayern 2017-2019](sub_task_1.1.png)
@@ -38,14 +38,14 @@ Use the DTM as a map layer in the background. Try to find the digital administra
 
 ## Sub-Task 1.2 Answer:
 
-Creating the map using the following steps:
-1- After downloading the DTM of Bavaria, we add the layer to the QGIS as a raster layer.
-2- In Jupyter notebook Task01, we download a csv file for the stations of Bavaria to use it in QGIS. We upload it as a Delimited Text Layer.
-3- In the end we add the shape file of the administrative boundaries of Bavaria as a vector layer.
-4- Editing the station layer to change the station shape to star and the color to red. We Changed also the station numbers color to white with black borders and make the font 10 to be more clear.
-5- In the shape layer, we use the color ramp of the elevation that is stored in QGIS which shows the lowest altitude as light blue and the highest as black passing by green, yellow, orange and brown.
-6- Open street map layer is kept in the bottom of the layers as a background.
-7- Using the Layout manager, we add a longitude and latitude, title, north arrow, source and scale bar.
+Creating the map using the following steps:<br />
+1- After downloading the DTM of Bavaria, we add the layer to the QGIS as a raster layer.<br />
+2- In Jupyter notebook Task01, we download a csv file for the stations of Bavaria to use it in QGIS. We upload it as a Delimited Text Layer.<br />
+3- In the end we add the shape file of the administrative boundaries of Bavaria as a vector layer.<br />
+4- Editing the station layer to change the station shape to star and the color to red. We Changed also the station numbers color to white with black borders and make the font 10 to be more clear.<br />
+5- In the shape layer, we use the color ramp of the elevation that is stored in QGIS which shows the lowest altitude as light blue and the highest as black passing by green, yellow, orange and brown.<br />
+6- Open street map layer is kept in the bottom of the layers as a background.<br />
+7- Using the Layout manager, we add a longitude and latitude, title, north arrow, source and scale bar.<br />
 
 ![Elevation Heat Map of Bayern City in Germamy](sub_task_1.2.png)
 
@@ -63,7 +63,7 @@ Reactivating the "Processing" in the plugins, we can access the "Sample raster v
 
 ![Sceenshot of the resulted attribute table after sampling the data from DTM](DTM_Sample_at_Station_Locations.PNG)
 
-The data was copied from the attribute table to a CSV file and loaded the file in Task01 Jupyter notebook to check which stations have the difference in altitude.
+The data was copied from the attribute table to a CSV file and loaded the file in Task01 Jupyter notebook to check which stations have the difference in altitude.<br />
 Comparing the original altitudes from the DWD station file to the heights derived from the DTM, we only have 2 stations with a huge difference. The stations are Zugspitze and Großer Arber
 
 ## Sub-Task 1.4 Question:

@@ -4,7 +4,7 @@ Produce a rainfall video over a 7-day period in 2021 that covers the heavy rains
 
 ## Sub-Task 2.1 Question: Create and fill your own geodatabase
 
-Create and fill your own geodatabase with DWD precipitation station data as well as hourly precipitation time series. Follow the Jupyter Notebook tutorial of geo0930_PostGIS_Insert_DWD_Stations_and_TS (main notebook geo0930_PostGIS_DWD_Stations_and_TS_V002.ipynb) together with the respective YouTube tutorial.
+Create and fill your own geodatabase with DWD precipitation station data as well as hourly precipitation time series. Follow the Jupyter Notebook tutorial of geo0930_PostGIS_Insert_DWD_Stations_and_TS (main notebook geo0930_PostGIS_DWD_Stations_and_TS_V002.ipynb) together with the respective YouTube tutorial.<br />
 The TimeManager plugin is deprecated! The new way is to use the QGIS Temporal Controller, which is integrated in recent QGIS versions. I have no video on that, yet.
 
 ### The username and password of QGIS file for this task are:
@@ -15,51 +15,49 @@ The TimeManager plugin is deprecated! The new way is to use the QGIS Temporal Co
 
 In this task we are going to create a new database and a new schema so we can import the data from DWD website and create the tables of precipitation and stations, so we can create the view later in task 2.2 and use the view as a layer in QGIS in task 2.3, using the following steps:
 
-1- Open windows powershell
+1- Open windows powershell<br />
 2- Type the following code so we can access the sql folder created:
-cd C:\Users\HP\Desktop\Ziad\University\Geodata\geodata_september2022_final_group_h\Task02\sql
-
+cd C:\Users\HP\Desktop\Ziad\University\Geodata\geodata_september2022_final_group_h\Task02\sql<br />
 3- Type the following code to create a database:
-psql -U postgres -d postgres -f .\010_create_database_geo_create_role_v001.sql
-
+psql -U postgres -d postgres -f .\010_create_database_geo_create_role_v001.sql<br />
 This file "010_create_database_geo_create_role_v001.sql" consists of this code that create a database geo and schema dwd
 
-CREATE ROLE geo_master WITH
-    LOGIN
-    NOSUPERUSER
-    NOCREATEDB
-    CREATEROLE
-    INHERIT
-    NOREPLICATION
-    CONNECTION LIMIT -1
-    PASSWORD 'xxxxxx';
+CREATE ROLE geo_master WITH<br />
+    LOGIN<br />
+    NOSUPERUSER<br />
+    NOCREATEDB<br />
+    CREATEROLE<br />
+    INHERIT<br />
+    NOREPLICATION<br />
+    CONNECTION LIMIT -1<br />
+    PASSWORD 'xxxxxx';<br />
 COMMENT ON ROLE geo_master IS 'The geo database master user.';
 
-CREATE DATABASE geo
-    WITH 
-    OWNER = geo_master
-    ENCODING = 'UTF8'
+CREATE DATABASE geo<br />
+    WITH <br />
+    OWNER = geo_master<br />
+    ENCODING = 'UTF8'<br />
     CONNECTION LIMIT = -1;
 
-COMMENT ON DATABASE geo
+COMMENT ON DATABASE geo<br />
     IS 'Geospatial database for training with PostGIS / QGIS';
 
 \c geo
 
-CREATE SCHEMA dwd
+CREATE SCHEMA dwd<br />
     AUTHORIZATION geo_master;
 
-COMMENT ON SCHEMA dwd
+COMMENT ON SCHEMA dwd<br />
     IS 'Schema / namespace to store DWD data.';
 
 4- Password: "xxxxxx"
 
-5- Type the following code to connect as postgres to geo
+5- Type the following code to connect as postgres to geo<br />
 psql -U postgres -d geo
 
 6- Password: "xxxxxx"
 
-7- Type the following code:
+7- Type the following code:<br />
 create extension postgis;
 
 8- Then the next step is to run the jupyter notebook file name "Task02" so we can extract the stations information automatically from DWD website.
@@ -85,30 +83,30 @@ where t1.station_id = t2.station_id)
 
 Refreshing the view and "v_station_prec" is shown in the view.
 
-Next steps: 
-1- Open QGIS new project
-2- Add the view that we created as a layer: Layer > Add Layer > Add PostGIS Layers
-3- Creacting a new connection.
-4- In the Authentication, filling inside the basic tab the user name and we store it.
-Username: "geo_master"
-5- Clicking ok and typing the password: "xxxxxx"
-Password: "xxxxxx"
-6- To find the view, we have to drop it. So we open the windows powershell where we stopped after step number 7 in Task 2.1 and we type the following code:
-drop view dwd.v_stations_prec;
-6- Finding the view table in the dwd Schema so we can add it as a layer > click on it "v_stations_prec" > edit the Feature id and turn on station_id and ts > Add it
-Now we can see the stations popping up.
-We define a date range so QGIS will read the information only during the flooding event, by right clicking on v_stations_prec > update sql layer, we add a second condition:
-where ts > '2021-07-10 00:00:00' and ts < '2021-07-17 00:00:00'
-We used this date so we can have the flooding date in the middle of the start date and end date.
+Next steps: <br />
+1- Open QGIS new project<br />
+2- Add the view that we created as a layer: Layer > Add Layer > Add PostGIS Layers<br />
+3- Creacting a new connection.<br />
+4- In the Authentication, filling inside the basic tab the user name and we store it.<br />
+Username: "geo_master"<br />
+5- Clicking ok<br />
+Password: "xxxxxx"<br />
+6- To find the view, we have to drop it. So we open the windows powershell where we stopped after step number 7 in Task 2.1 and we type the following code:<br />
+drop view dwd.v_stations_prec;<br />
+6- Finding the view table in the dwd Schema so we can add it as a layer > click on it "v_stations_prec" > edit the Feature id and turn on station_id and ts > Add it<br />
+Now we can see the stations popping up.<br />
+We define a date range so QGIS will read the information only during the flooding event, by right clicking on v_stations_prec > update sql layer, we add a second condition:<br />
+where ts > '2021-07-10 00:00:00' and ts < '2021-07-17 00:00:00'<br />
+We used this date so we can have the flooding date in the middle of the start date and end date.<br />
 
 We added the stations also as PostGIS layer but it was not necessary since we are going to use only the stations that are collecting precipitation information during the flooding event.
 
 Now we can see the stations. We fix the color of the precipitations value so we can use them later in task2.3 for the animation, and we fix the size of the circle of the stations so they can be shown clearly using the following steps:
 
-1- Right click on the v_stations_prec
-2- Symbology
-3- Graduated
-4- Colors we use wiki-precip-mm, a specified colors for precipitation in mm in QGIS.
+1- Right click on the v_stations_prec<br />
+2- Symbology<br />
+3- Graduated<br />
+4- Colors we use wiki-precip-mm, a specified colors for precipitation in mm in QGIS.<br />
 5- Symbol size 4.4mm
 
 ## Sub-Task 2.3 Question: Use the QGIS Temporal Controller to produce an animation
@@ -126,29 +124,29 @@ Save/export the created images and make a video from it. Add it to your gitlab r
 
 Now we need to Import the NRW administrative boundary (vector layer) as a Web Feature Service (WFS),following the steps below:
 
-1- Open QGIS, Layer > Add Layer > Add WMS/WMTS Layer
-2- New connection:
-3- Name: NW Digitale Topographische Karten; DTK [WMTS]
+1- Open QGIS, Layer > Add Layer > Add WMS/WMTS Layer<br />
+2- New connection:<br />
+3- Name: NW Digitale Topographische Karten; DTK [WMTS]<br />
 4- URL: https://www.wms.nrw.de/geobasis/wms_nw_dtk
-Source of the link from https://www.bezreg-koeln.nrw.de/brk_internet/geobasis/webdienste/geodatendienste/index.html
-5- Click ok
+Source of the link from https://www.bezreg-koeln.nrw.de/brk_internet/geobasis/webdienste/geodatendienste/index.html <br />
+5- Click ok<br />
 6- Add DTK Farbe
 
-We put the layers in order so the v_stations_prec is on top, and the DTK Farbe in the bottom.
+We put the layers in order so the v_stations_prec is on top, and the DTK Farbe in the bottom.<br />
 Adding north arrow, title and a scale bar from the decoration in the view option.
 
-Fixing the temporal control following the steps below:
-1- Right click on v_stations_prec layer
-2- Properties
-3- Temporal
-4- Configuration: Single Field with Date/Time
-5- Limits: Include Start, Include End
-6- Field: ts
-7- Event Duration: 1 Hour
+Fixing the temporal control following the steps below:<br />
+1- Right click on v_stations_prec layer<br />
+2- Properties<br />
+3- Temporal<br />
+4- Configuration: Single Field with Date/Time<br />
+5- Limits: Include Start, Include End<br />
+6- Field: ts<br />
+7- Event Duration: 1 Hour<br />
 8- Apply ok
 
-To view the Temporal control panel we click on view > Panels and we turn on the "Temporal Control" option.
-Setting the dates between 2021-07-10 00:00:00 and 2021-07-17 00:00:00 so we can have the flooding event in the middle.
+To view the Temporal control panel we click on view > Panels and we turn on the "Temporal Control" option.<br />
+Setting the dates between 2021-07-10 00:00:00 and 2021-07-17 00:00:00 so we can have the flooding event in the middle.<br />
 Clicking play to see the animation.
 
 ![Flooding July 2022 Animated](sub-task_2.3_animation_screenshot.PNG)
