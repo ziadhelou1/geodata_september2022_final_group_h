@@ -7,7 +7,7 @@ Produce a rainfall video over a 7-day period in 2021 that covers the heavy rains
 Create and fill your own geodatabase with DWD precipitation station data as well as hourly precipitation time series. Follow the Jupyter Notebook tutorial of geo0930_PostGIS_Insert_DWD_Stations_and_TS (main notebook geo0930_PostGIS_DWD_Stations_and_TS_V002.ipynb) together with the respective YouTube tutorial.
 The TimeManager plugin is deprecated! The new way is to use the QGIS Temporal Controller, which is integrated in recent QGIS versions. I have no video on that, yet.
 
-### Before we start to avoid confusion, the username and password of QGIS file for this task are:
+### The username and password of QGIS file for this task are:
 ### Username: "geo_master"
 ### Password: "xxxxxx"
 
@@ -151,6 +151,6 @@ To view the Temporal control panel we click on view > Panels and we turn on the 
 Setting the dates between 2021-07-10 00:00:00 and 2021-07-17 00:00:00 so we can have the flooding event in the middle.
 Clicking play to see the animation.
 
-![Flooding July 2022 Animated](sub-task_2.3_animation screenshot.PNG)
+![Flooding July 2022 Animated](sub-task_2.3_animation_screenshot.PNG)
 
 A video was uploaded on youtube to show the flooding event: https://youtu.be/iGqAIjkFptU

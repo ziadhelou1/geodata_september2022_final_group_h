@@ -19,8 +19,8 @@ The layers were already provided. To georeference the picture with the NRW map, 
 8  Target SRS: EPSG: 25832
 9- Adding a title, north arrow and a scale bar found in the "view" > "decorations" option.
 
-![Georeferenced Burial Mounds Picture with North Rhine-Westphalia map](Burial_Mounds_modified_picture1.PNG)
-(Burial_Mounds_modified_picture2.PNG)
+![Georeferenced Burial Mounds Picture with North Rhine-Westphalia map]([images]/Burial_Mounds_modified_picture1.PNG)
+([images]/Burial_Mounds_modified_picture2.PNG)
 
 Task 3.1 QGIS file can be found under Task_3.1 name.
 

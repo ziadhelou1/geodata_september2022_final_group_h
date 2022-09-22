@@ -19,7 +19,7 @@ We worked on 4 stations that have the ids of 2480, 6346, 2290, 5792. The altitud
 We renamed the columns so the highest station "Zugspitze" will show the real altitude 2965 meters.
 After plotting these 4 stations, we can verify the hypothesis. It is clearly demonstrated that each time the altitude is higher, the temperature is proportionally lower.
 
-![Annual Mean Temperatures versus Altitude of 4 Stations in Bavaria](Annual Mean Temperatures versus Altitude of 4 Stations in Bavaria.PNG)
+![Annual Mean Temperatures versus Altitude of 4 Stations in Bavaria](sub_task_1.1_2.PNG)
 
 To plot the temperature versus altitude of all Bavaria stations in a scatter plot, we did a series of steps in Task01 jupyter notebook.
 There are 2 stations in the results that have more than 1000 meters of altitude but they miss the first digit on the left so the results that we got shows a correlation between all the other stations, but only these 2 stations are not correlated with the others at all.
