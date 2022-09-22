@@ -63,12 +63,12 @@ To measure the mound heights relative to their direct environment, the "profile 
 Clicking on Plugins > Profile Tool > Terrain Profile, we can access the profile tool to measure directly on the map.
 Simply drawing a line over the mounds in the DTM layer to measure their elevations. We extended the line as much as we can so we can identify the heights. We used many lines over many burial mounds with many directions so we can take a better idea about the elevations.
 
-![Burial Mounds Elevation Measurements 1](images/elevation_measurements_1)
-![Burial Mounds Elevation Measurements 2](images/elevation_measurements_2)
-![Burial Mounds Elevation Measurements 3](images/elevation_measurements_3)
-![Burial Mounds Elevation Measurements 4](images/elevation_measurements_4)
-![Burial Mounds Elevation Measurements 5](images/elevation_measurements_5)
-![Burial Mounds Elevation Measurements 6](images/elevation_measurements_6)
+![Burial Mounds Elevation Measurements 1](images/elevation_measurements_1.PNG)
+![Burial Mounds Elevation Measurements 2](images/elevation_measurements_2.PNG)
+![Burial Mounds Elevation Measurements 3](images/elevation_measurements_3.PNG)
+![Burial Mounds Elevation Measurements 4](images/elevation_measurements_4.PNG)
+![Burial Mounds Elevation Measurements 5](images/elevation_measurements_5.PNG)
+![Burial Mounds Elevation Measurements 6](images/elevation_measurements_6.PNG)
 
 In the pictures, the red lines on the map are showing the relative burial mounds measured, and we can see in the table the elevation above the sea. The lines were drawn from the top to the bottom, so it is reflected in the graph starting from 0 on the x axis.
 The x axis represent the distance in meters of the red line, and the y line represents the elevation above the sea.
